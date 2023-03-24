@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <title>RockPaperScissors 1.2</title>
+</head>
+<body>
+    <main>
+      <header>
+        <h1>ROCK PAPER SCISSORS</h1>
+      </header>
+      <div class="game">
+        <div id="selection" class="selection">
+            <div class="item rock">
+                <img class="item1" src="assets/rock.png" alt="rock">
+            </div>
+            <div class="item item paper">
+                <img class="item1"src="assets/paper.png" alt="paper">
+            </div>
+            <div class="item scissor">
+                <img class="item1" src="assets/scissors2.png" alt="scissor">
+            </div>
+        </div>
+
+        <div class="selected playerSelect">
+            <span>You Selected:</span>
+            <img id="userSelect" class="selectedItem" src="assets/barrier.png" alt="undefined">
+        </div>
+        <div class="resultBox">
+            <div class="result">
+                <h2 id="winnerIs"></h2>
+                <img class="winnerImg" id="winner" src="" alt="">
+                <h1 id="resultText">Make Your Selection And Hit Start</h1>
+            </div>
+            <div class="button">
+                <button id="start">Start</button>
+            </div>
+
+        </div>
+
+        <div class="selected botSelect">
+            <span>Bot Selected:<span>
+            <img id="botSelect" class="selectedItem" src="assets/barrier.png" alt="undefined">
+        </div>
+
+        <div class="selection">
+            <div class="item rock">
+                <img class="item1" src="assets/rock.png" alt="rock">
+            </div>
+            <div class="item paper">
+                <img class="item1"src="assets/paper.png" alt="paper">
+            </div>
+            <div class="item scissor">
+                <img class="item1" src="assets/scissors2.png" alt="scissor">
+            </div>
+        </div>
+      </div>
+      <footer>
+        &copy; CopyRight ShahBhai 
+        <a href="https://www.instagram.com/oohsorry_/" target="_blank">
+            <span>@Oohsorry_ </span>
+        </a>
+    </footer>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

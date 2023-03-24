@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Press+Start+2P&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(assets/bg.png);
+    background-size: contain;
+    width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    font-size: .50rem;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+
+
+main{
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+header{
+    flex: .3;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+header h1 {
+    text-shadow: 4px 7px 25px rgba(0, 0, 100, 1);
+    color: cyan;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+}
+.game {
+    outline: 2px solid black;
+    display: flex;
+    flex: 2;
+    padding: 50px;
+    border-radius: 50px;
+    background-color: rgba(10, 10, 30, .4);
+    backdrop-filter: blur(2px);
+    width: 80%;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, .4);
+    text-align: right;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.selection {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+
+.selection .item {
+    min-width: 50px;
+    max-width: 100px;
+    width: 80%;
+    max-height: auto;
+}
+.item1 {
+    width: 100%;
+    height: 100%;
+}
+
+.selection .item:hover {
+  background-color: rgba(255, 255, 255, .4);
+  transform: scale(1.1);
+}
+
+.playerSelect {
+    flex: 1;
+}
+.playerSelect img {
+    margin: 10px;
+    background: radial-gradient(gold, black);
+    border-radius: 50px;
+    border: 1px solid white;
+
+}
+
+.botSelect {
+    flex: 1;
+}
+.botSelect img {
+    margin: 10px;
+    background: radial-gradient(gold, black);
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.resultBox {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.button button{
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid blue;
+    background-color: rgba(50, 100, 255, 0.8);
+    box-shadow: 0px 0px 25px black;
+    transition: all ease-in 200ms ;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.button button:hover {
+    box-shadow: 0px 0px 25px rgba(0, 0, 255, 0.8);
+}
+.result{
+    flex: 3;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.winner{
+    width: 100px;
+    height: 100px;
+}
+
+.selectedItem{
+    max-width: 150px;
+    width: 70%;
+    min-width: 50px;
+    padding: 10px;
+    height: auto;
+
+}
+.selected{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected span {
+    font-size: 1rem
+}
+
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: magenta;
+}
+
+.active{
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.winnerImg{
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(yellow, black, gold);
+    border-radius: 50px;
+    padding: 10px;
+    opacity: 0;
+    border: 2px solid white;
+}
+
+@media only screen and (max-width: 1000px){
+
+    .selected span{
+        font-size: .75rem;
+    }
+
+    .button button {
+        margin-top: 1rem;
+        padding: .75rem 3rem;
+        font-size: .75rem
+    }
+
+    .winnerImg{
+        width: 90px;
+        height: 90px;
+    }
+
+    #resultText{
+        font-size: .75rem;
+    }
+    footer{
+        font-size: .5rem;
+    }
+
+    header h1{
+        font-size: 1rem;
+    }
+}
